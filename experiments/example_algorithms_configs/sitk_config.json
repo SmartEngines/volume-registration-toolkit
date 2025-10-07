@@ -1,0 +1,35 @@
+{
+  "TransformType": "Similarity",
+  "InitialTransform": "MOMENTS",
+  "initial_transform_help": {
+    "possible_options" : ["GEOMETRY", "MOMENTS", "POINTS", "MATRIX", "MANUAL"]
+  },
+  "imagej_landmark_coords_file_path" : "",
+  "InitialTransformParams":{
+    "scale": 1.0,
+    "rotation": [0.0 , 0.0, 0.0],
+    "InitialTranslationOption": "GEOMETRY",
+    "InitialTranslationOptionHelp":{
+      "possible_options" : ["GEOMETRY", "MOMENTS", "MANUAL"]
+    },
+    "translation": [0, 0, 0]
+  },
+  "InitialTransformViewer" : false,
+  "Metric": "MattesMutualInformation",
+  "MMI_MetricNumberOfHistogramBins": 80,
+  "Interpolator": "Linear",
+  "HistMatching": true,
+  "MetricSamplingStrategy": "RegularGrid",
+  "MetricSamplingPercentage": 0.8,
+  "Optimizer": "RegularStepGradientDescent",
+  "Estimate_learning_rate_option" : "Once",
+  "LearningRate": 2.0,
+  "NumberOfIterations": 150,
+  "minStep":1e-5,
+  "relaxationFactor":0.7,
+  "gradientMagnitudeTolerance": 1e-6,
+  "ConvergenceMinimumValue": 1e-7,
+  "ConvergenceWindowSize": 10,
+  "ShrinkFactors": [4,2,1],
+  "SmoothingSigmas": [2,1,0]
+}
